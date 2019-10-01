@@ -1,2 +1,2 @@
 # Hello_worlde
-test
+print("123")
