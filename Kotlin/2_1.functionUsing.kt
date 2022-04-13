@@ -15,12 +15,12 @@ val name = "Rover"
   
   
 //learn how to simplify that code using techniques for repeating and reusing code,
-  Case1:一般
+//一般
 fun printBorder(){
     println("==================")
 }
 
-  Case2:使用repeat
+//使用repeat
 fun printBorder2(){
     repeat(18){
         print("=")
@@ -28,7 +28,7 @@ fun printBorder2(){
     println()
 }
 
-  Case3:增加參數
+//增加參數
 fun printBorder3(border:String,timeToRepeat:Int){  //parameter
     repeat(timeToRepeat){
         print(border)
@@ -36,16 +36,16 @@ fun printBorder3(border:String,timeToRepeat:Int){  //parameter
     println()
 }
 
-  Case4:回傳數字
+//回傳數字
 fun sum(a: Int, b: Int): Int {
     return a + b
 }
 
-  Case5:returns no meaningful value.
+//   Case5:returns no meaningful value.
 fun printSum(a: Int, b: Int): Unit { //:Unit 可以省略
     println("sum of $a and $b is ${a + b}")
 }
 
-Case6:A function body can be an expression. Its return type is inferred.
+// A function body can be an expression. Its return type is inferred.
   fun sum2(a:Int,b:Int)=a+b
 
