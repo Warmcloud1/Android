@@ -5,3 +5,6 @@ fun maxOf(a: Int, b: Int): Int {
         return b
     }
 }
+
+
+fun maxOf2(a: Int, b: Int) = if (a > b) a else b
