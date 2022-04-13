@@ -21,6 +21,11 @@ item at 1 is banana
 item at 2 is kiwifruit
 */
 
+// Alternatively, you can use the withIndex library function:
+for ((index, value) in array.withIndex()) {
+    println("the element at $index is $value")
+}
+
 
 
 
