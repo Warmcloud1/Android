@@ -1,0 +1,28 @@
+ERROR:
+ERROR logs report that something went seriously wrong, such as the reason why an app crashed.
+
+WARN:
+WARN logs are less severe than an error but still report something that should be fixed to avoid a more serious error.
+An example might be if you call a function that's deprecated, meaning that its use is discouraged in favor of a newer alternative.
+
+INFO:
+INFO logs provide useful information, such as an operation being successfully completed.
+
+DEBUG:
+DEBUG logs contain information that may be useful when investigating an issue.
+These logs are not present in release builds such as one you'd publish on the Google Play Store.
+
+VERBOSE:
+As the name implies, verbose is the least specific log level.
+What's considered a debug log, versus a verbose log, is a bit subjective, but generally,
+a verbose log is something that can be removed after a feature is implemented, whereas a debug log may still be useful for debugging.
+These logs are also not included in release builds.
+
+fun logging() {
+    Log.e(TAG, "ERROR: a serious error like an app crash")
+    Log.w(TAG, "WARN: warns about the potential for serious errors")
+    Log.i(TAG, "INFO: reporting technical information, such as an operation succeeding")
+    Log.d(TAG, "DEBUG: reporting technical information useful for debugging")
+    Log.v(TAG, "VERBOSE: more verbose than DEBUG logs")
+}
+
