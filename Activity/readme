@@ -14,8 +14,12 @@ onStop:將手機資源釋放掉，可其他資源使用，此時UI是不可見�
 
 onDestroy:清存內存，最後被銷毀
 
+螢幕打開 onCreate -> onStart -> onResume 
+
 Home後並返回App: onPause -> onStop -> onDestoy -> onCreate -> onStart -> onResume
 旋轉螢幕: onPause -> onStop -> onDestoy -> onCreate -> onStart -> onResume
+跳場景: onPause -> onStop 返回場景 onStart -> onResume
+
 
 
 打電話根據版本不同有不同結果 待討論
