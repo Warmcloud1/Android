@@ -1,0 +1,21 @@
+Activity 生命週期
+
+Activity launched
+
+onCreate:準備要產生時的方法
+
+onStart:負責將UI物件初始化，準備將畫面產生出來，畫面呈現但無法互動
+
+onResume:畫面已呈現，持續跟使用者互動，直到被轉移焦點，例如:跳轉至其他Activity
+
+onPause:切換至其他Activity或開啟其他App會進入 onPause，回到原來的Activity回到onResume
+
+onStop:將手機資源釋放掉，可其他資源使用，此時UI是不可見的
+
+onDestroy:清存內存，最後被銷毀
+
+Home後並返回App: onPause -> onStop -> onDestoy -> onCreate -> onStart -> onResume
+旋轉螢幕: onPause -> onStop -> onDestoy -> onCreate -> onStart -> onResume
+
+
+打電話根據版本不同有不同結果 待討論
