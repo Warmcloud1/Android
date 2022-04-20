@@ -1,0 +1,11 @@
+1.android 3.0提出
+
+2.Activity可以有多個fragment
+
+3.一個Fragment也可以被多個Activity重用
+
+4.Fragment有自己的Lifecycle :onAttached -> onCreate -> onCreateView -> (onViewCreated) -> onActivtyCreate -> onStart -> onResume
+                            -> Fragment is active -> onPause -> onStop -> onDestroyView -> onDestroy ->onDetach
+                            -> Fragment is destroyed
+
+5.模組化、可重用、適應性
