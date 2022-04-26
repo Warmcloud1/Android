@@ -18,8 +18,8 @@ onDestroy:清存內存，最後被銷毀
 
 Home後並返回App: onPause -> onStop -> onDestoy -> onCreate -> onStart -> onResume
 旋轉螢幕: onPause -> onStop -> onDestoy -> onCreate -> onStart -> onResume
-跳離場景: onPause -> onStop 返回場景 onStart -> onResume
-
+跳離場景: onPause -> onStop 返回場景: onStart -> onResume
+A 跳至 B 場景 -> A.onPause() -> B.onCreate() -> B.onStart() -> B.onResume() -> A.onStop()
 
 
 打電話根據版本不同有不同結果 待討論
