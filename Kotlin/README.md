@@ -1,4 +1,4 @@
-**比較DiffUtil與Adapter.notifyItemChanged…差異
+**比較DiffUtil與Adapter.notifyItemChanged…差異**
 ==============
 > DiffUtil
 > 效率較高
