@@ -24,7 +24,3 @@ fun main(args: Array<String>) {
 括號內 可以為空,代表沒有傳入任何參數
 () -> Unit
 */
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Securi
