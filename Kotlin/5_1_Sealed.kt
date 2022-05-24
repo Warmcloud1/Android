@@ -1,7 +1,8 @@
-//在表達一個元件的狀態時，可能第一個想到的會是 enum class 。而現在有了新的選擇—— sealed class 。
-// 它們倆的差別是： enum class 可以拿來簡單的判斷狀態，但不能傳遞變數；反之，sealed class 可以攜帶變數。
+/*
+在表達一個元件的狀態時，可能第一個想到的會是 enum class 。而現在有了新的選擇—— sealed class 。
+它們倆的差別是： enum class 可以拿來簡單的判斷狀態，但不能傳遞變數；反之，sealed class 可以攜帶變數。
 
-/*sealed class 是一個 abstract class ，本身並不能被 instantiate（實體化）。
+sealed class 是一個 abstract class ，本身並不能被 instantiate（實體化）。
 但可以透過繼承某個 sealed class ，限縮可能的類型。可以傳遞變數這種特性讓它可以作為進階版的 enum 使用，與 when語法配合後效果更佳。
 */
 
