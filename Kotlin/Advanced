@@ -1,0 +1,1 @@
+mutable 非同步協程，共享變數 (actor):https://kotlinlang.org/docs/shared-mutable-state-and-concurrency.html#actors
