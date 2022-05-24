@@ -10,19 +10,33 @@
 fun main(args: Array<String>) {
     val machineState = checkStateByMachineId(1)
     machineStatePrinting(machineState)
-    println()
+/*result:
+the 1 result Warthog
+the 2 result Hedgehog
+the 3 result Badger
+the 4 result Drake
+*/
 
     val secondMachineState = checkStateByMachineId(2)
     machineStatePrinting(secondMachineState)
-    println()
+/*result:
+Error Occurred:reason is
+too big to eat
+*/
 
     val thirdMachineState = checkStateByMachineId(3)
     machineStatePrinting(thirdMachineState)
-    println()
+/*result:
+It's empty result*/
 
     val myMachine = WorkingState.Finished(listOf("AA","BB","CC"))
     machineStatePrinting(myMachine)
-
+/*
+result:
+the 1 result AA
+the 2 result BB
+the 3 result CC
+*/
 }
 
 
@@ -64,7 +78,7 @@ fun machineStatePrinting(workingState: WorkingState) {
             println("""
                 Error Occurred:reason is
                 ${workingState.whatHappened}
-            """.trimIndent())
+            """.trimIndent()) //检测所有输入行的共同最小缩进,将其从每一行中移除,如果第一行和最后一行为空白,也将其移除(注意空白与空的区别)。
         }
         WorkingState.Working->{
             println("machine is working")
