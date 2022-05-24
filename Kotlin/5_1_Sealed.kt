@@ -7,6 +7,7 @@ sealed class 是一個 abstract class ，本身並不能被 instantiate（實體
 */
 
 //參考 https://louis383.medium.com/kotlin-sealed-classes-%E7%9A%84%E5%9F%BA%E7%A4%8E%E4%BD%BF%E7%94%A8-de660dbb63d2
+//https://kotlinlang.org/docs/sealed-classes.html
 
 fun main(args: Array<String>) {
     val machineState = checkStateByMachineId(1)
