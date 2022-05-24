@@ -42,7 +42,7 @@ the 3 result CC
 
 
 sealed class WorkingState {
-    data class Finished(val result: List<String>) : WorkingState()
+    data class Finished(val result: List<String>) : WorkingState() //可使用（protected默認情況下）或private：
     data class ErrorHappened(val whatHappened: String) : WorkingState()
     object Working : WorkingState()
     object EmptyResult : WorkingState()
@@ -87,6 +87,6 @@ fun machineStatePrinting(workingState: WorkingState) {
         WorkingState.EmptyResult -> {
             println("It's empty result")
         }
-
+        //when當您在表達式中使用密封類時，無需else在語句中添加子句。但是，這僅在您when用作表達式（使用結果）而不是語句時才有效
     }
 }
