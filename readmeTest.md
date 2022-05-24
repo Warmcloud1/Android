@@ -1,6 +1,8 @@
 ## 1. 若未使用CoroutinScope.async擴充方法請試著將習題二之須同步執行的API改為使用之並比較兩者之差異
 ## 2. 若API發生例外則Coroutines該如何處理之，在launch、async、CoroutineScope又可能有差異。
 
+#TEST
+
 例外發生時CoroutineScope管理的child job因為Job會有不同的行為，
 請紀錄於root/REAMDE.md中。
 * launch:
