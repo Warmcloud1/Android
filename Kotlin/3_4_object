@@ -1,0 +1,3 @@
+class Demo { }  //非靜態
+
+object Demo { }  //靜態
