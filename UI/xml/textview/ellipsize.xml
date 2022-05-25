@@ -1,0 +1,16 @@
+TextView中可以设置一个ellipsize属性,作用是当文字长度超过textview宽度时的显示方式:
+
+例如，"encyclopedia"显示, 只是举例，以实际显示为准：）
+
+Android:ellipsize=”start”—–省略号显示在开头 "...pedia"
+
+android:ellipsize=”end”——省略号显示在结尾  "encyc..."
+
+android:ellipsize=”middle”—-省略号显示在中间 "en...dia"
+
+android:ellipsize=”marquee”–以横向滚动方式显示(需获得当前焦点时)
+
+作者：NeWolf
+链接：https://www.jianshu.com/p/211e5e4137fe
+来源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
