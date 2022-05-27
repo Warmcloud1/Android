@@ -13,3 +13,12 @@ enum class Aaa{
   CDE
   FGH
 }
+
+class{
+  常數
+  interface
+  靜態類
+  抽象靜態類
+  屬性
+  方法
+}
