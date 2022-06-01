@@ -35,3 +35,5 @@ fun main() = runBlocking<Unit> {
     }
     //print:try/catch got java.lang.Exception: I throw an Exception
 }
+
+//參考資料: https://ithelp.ithome.com.tw/m/articles/10269005
