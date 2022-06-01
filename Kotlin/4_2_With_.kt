@@ -5,7 +5,7 @@ val greatSmartphone = GoodSmartPhone()
 with(greatSmartphone) {
     this.setCleanSystemInterface(true) //等同於 setGreatBatteryLife(true)
     setGreatBuildQuality(true)
-    setNouch(ture)
+    setNouch(true)
 }
 //但很多使用狀況變數可能是可為空的變數，如此一來 with的 scope 中就必須要宣告 「?」或「!!」來取用該物件的方法 (Method)。
 private fun buildGreatSmartphone(goodSmartPhone: GoodSmartPhone?) {
@@ -13,7 +13,7 @@ private fun buildGreatSmartphone(goodSmartPhone: GoodSmartPhone?) {
         this?.setCleanSystemInterface(true)
         this?.setGreatBatteryLife(true)
         this?.setGreatBuildQuality(true)
-        this?.setNouch(ture)
+        this?.setNouch(true)
     }
 }
 //參考資料:https://louis383.medium.com/%E7%B0%A1%E4%BB%8B-kotlin-run-let-with-also-%E5%92%8C-apply-f83860207a0c
