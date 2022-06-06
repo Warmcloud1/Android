@@ -1,0 +1,26 @@
+       
+       getString(R.string.name,"string")
+       
+       %s 字串
+       %d 整數
+       %f 浮點數
+       
+       特殊符號
+       &          \&amp;
+        <          \&lt;
+        >          \&gt;
+        "          \&quot;
+        '          \&apos; or \'
+        (         \(
+        )         \)
+        %         \%%
+        
+        範例: 
+      xml:
+        <string name="get_string_text">\( %f  \) \%%</string>
+      UI:
+        binding.test.text=getString(R.string.get_string_text,123)
+      顯示:
+        (156.000000)%
+        
+    //參考 :https://developer.android.com/guide/topics/resources/string-resource
