@@ -1,5 +1,4 @@
        
-       getString(R.string.name,"string")
        
        %s 字串
        %d 整數
@@ -19,7 +18,7 @@
       xml:
         <string name="get_string_text">\( %f  \) \%%</string>
       UI:
-        binding.test.text=getString(R.string.get_string_text,123)
+        binding.test.text=getString(R.string.get_string_text,123) //123 is variable
       顯示:
         (156.000000)%
         
