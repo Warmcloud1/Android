@@ -1,3 +1,26 @@
 class Demo { }  //非靜態
 
-object Demo { }  //靜態
+Object用法一: Declaration :
+object Instance { }  //單例
+
+Object用法二: Expression:
+object建立出來的是匿名物件
+
+
+
+
+ 常數
+java: public static final  ->kotlin: companion object
+
+
+
+ top level property:
+ 
+  Kotlin class 外也可以寫東西
+  
+  val variable //以 靜態 成員的身份存在
+
+  class A{
+  }
+ 
+ 
