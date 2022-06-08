@@ -1,0 +1,10 @@
+    
+    Transformations
+    範例:
+    val popularity: LiveData<Popularity> = Transformations.map(_likes) {
+        when {
+            it > 9 -> Popularity.STAR
+            it > 4 -> Popularity.POPULAR
+            else -> Popularity.NORMAL
+        }
+    }
