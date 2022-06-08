@@ -12,3 +12,12 @@ String? Car?
 // 資料型態!!
 Int!!
 絕對無null
+
+
+XML 裡:
+如果左边运算数不是 null，则 Null 合并运算符 (??) 选择左边运算数，如果左边运算数为 null，则选择右边运算数。
+android:text="@{user.displayName ?? user.lastName}"
+
+等同於
+
+android:text="@{user.displayName != null ? user.displayName : user.lastName}"
