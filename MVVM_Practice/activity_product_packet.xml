@@ -148,7 +148,7 @@
         app:constraint_referenced_ids="price_constraintLayout,stock_symbol_constraintLayout,string_constraintLayout,product_name_textView" />
 
     <RadioGroup
-        android:id="@+id/sell_or_buy_radio_group"
+        android:id="@+id/sell_or_buy_radioGroup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -211,7 +211,7 @@
         app:layout_constraintTop_toBottomOf="@id/sell_or_buy_radio_group" />
 
     <RadioGroup
-        android:id="@+id/sort_stock_radio_group"
+        android:id="@+id/sort_stock_radioGroup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -452,7 +452,7 @@
 
 
     <EditText
-        android:id="@+id/order_number_edit_text"
+        android:id="@+id/order_number_editText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -525,7 +525,7 @@
         app:layout_constraintTop_toBottomOf="@+id/order_method_spinner" />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/can_buy_order_lot_text_view"
+        android:id="@+id/can_buy_order_lot_textView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -566,7 +566,7 @@
         app:layout_constraintTop_toBottomOf="@+id/can_buy_order_lot_text_view" />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/estimate_total_price_text_view"
+        android:id="@+id/estimate_total_price_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/small_margin"
@@ -589,7 +589,7 @@
         android:text="剩餘金額" />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/estimate_rest_price_text_view"
+        android:id="@+id/estimate_rest_price_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/white"
