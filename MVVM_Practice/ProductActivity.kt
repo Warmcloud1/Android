@@ -9,7 +9,6 @@ import android.view.View
 import android.view.inputmethod.EditorInfo
 import android.widget.*
 import androidx.lifecycle.Observer
-import com.example.aaa.databinding.ActivityProductPacketBinding
 import ext.displayAccountingNumber
 import ext.trimComma
 import utils.KeyboardTriggerBehavior
