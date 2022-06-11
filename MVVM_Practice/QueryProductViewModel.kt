@@ -2,12 +2,12 @@ import android.app.Application
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
-import com.example.aaa.Model.QueryProductData
+import com.example.mvvm-practice.Model.QueryProductData
 import com.pocket.gatewayconnector.GatewayConnector
 import com.pocket.gatewayconnector.ext.sendQueryProductPacket
 import pkts.QueryProductPacket
 import timber.log.Timber
-import com.example.aaa.Model.BaseAndroidViewModel
+import com.example.mvvm-practice.Model.BaseAndroidViewModel
 import kotlinx.coroutines.launch
 import java.text.DecimalFormat
 import java.text.NumberFormat
@@ -105,8 +105,6 @@ class QueryProductViewModel(
     private val _liveCanBuyLotNumber = MutableLiveData<Int>()
     val liveCanBuyLotNumber: LiveData<Int> = _liveCanBuyLotNumber
 
-    private var isFetching = false
-
     //下拉選單 選擇方式'數量/金額'，預設'數量'
     private val _liveSpinnerSelected = MutableLiveData<SpinnerSelected>()
     val liveSpinnerSelected : LiveData<SpinnerSelected> = _liveSpinnerSelected
@@ -116,6 +114,8 @@ class QueryProductViewModel(
 
     //先前下單數量
     var previousOrderNumber = 0
+
+    private var isFetching = false
 
     //商品漲跌百分比
     fun riseFallPercentPrice(): String {
@@ -162,7 +162,7 @@ class QueryProductViewModel(
                     postLiveQueryProductData(queryProductData)
                     }
                 }
-                //可刪
+                //todo可刪 測試取得資料
                 for(i in 0 until it.m_products.size()){
                     for(j in 0..35){
                         println("$i ${j}:${ it.m_products.get(i).GetValueByKeyCode(j)}")
@@ -194,7 +194,6 @@ class QueryProductViewModel(
         }
     }
 
-
     fun setLiveEntrustPrice(price: Double) {
         _liveEntrustPrice.value = price
         calEstimate()
@@ -219,8 +218,7 @@ class QueryProductViewModel(
         _liveEstimateRestPrice.value = price
     }
 
-
-    ////選單為Price 用編輯文字改變下單值
+    //選單為Price 用編輯文字改變下單值
     fun changeOrderNumberByEditText(orderNumber: Long) {
         when (_liveSpinnerSelected.value) {
             SpinnerSelected.LOT -> {
@@ -271,9 +269,7 @@ class QueryProductViewModel(
         var orderNumber = _liveOrderNumber.value
         //決定正負號
         val sign = currentSign(changeSign)
-        if (orderNumber == null) {
-//            orderNumber 不變
-        } else {
+        if (orderNumber != null) {
             //計算數值
             orderNumber += sign * 1
             //確認range
