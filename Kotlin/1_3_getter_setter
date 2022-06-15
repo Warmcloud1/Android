@@ -1,0 +1,19 @@
+1.避免人們直接存取屬性值，而將屬性包在getter與setter裡的用法稱為資料隱藏(data hiding)
+2.編寫自訂getter與setter可以保護屬性，避免被濫用。getter可以控制回傳的值，setter可以驗證值。
+3.平常若是用val定義的變數，編譯器會在幕後幫你加入getter，若是用var定義的屬性，編譯器會在幕後幫你加入getter與setter。例如:
+    
+    val name = "Amy"
+    
+    var weight = 50
+        get() = field
+
+        set(value) {
+            if (value > 0) field = value
+        }
+        
+   val isEmpty get() = this.size == 0  // 具有类型 Boolean
+
+
+
+//參考資料:https://ithelp.ithome.com.tw/articles/10246929
+//https://www.freecodecamp.org/news/java-getters-and-setters/
